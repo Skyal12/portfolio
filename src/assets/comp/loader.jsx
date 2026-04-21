@@ -11,7 +11,7 @@ export default function Loader() {
       document.querySelector(".loader").style.transform = "translateX(-100%)";
       document.body.classList.remove("overflow-hidden");
       document.body.classList.add("overflow-scroll");
-    }, 1500);
+    }, 700);
 
     return () => clearTimeout(timer);
   }, []);
