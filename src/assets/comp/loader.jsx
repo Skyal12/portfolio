@@ -3,27 +3,17 @@ import { useEffect, useState } from "react";
 export default function Loader() {
   const [loading, setLoading] = useState(true);
 
-  const addLoading = () => {
-    setLoading(true);
-    document.body.classList.add("overflow-hidden");
-  };
-  const removeLoading = () => {
-    setLoading(false);
-    document.querySelector(".loader").style.transform = "translateX(-100%)";
-    document.body.classList.remove("overflow-hidden");
-    document.body.classList.add("overflow-scroll");
-  };
-
   useEffect(() => {
+    document.body.classList.add("overflow-hidden");
+
     const timer = setTimeout(() => {
       setLoading(false);
-      addLoading();
-    }, 500);
+      document.querySelector(".loader").style.transform = "translateX(-100%)";
+      document.body.classList.remove("overflow-hidden");
+      document.body.classList.add("overflow-scroll");
+    }, 1500);
 
-    return () => {
-      removeLoading();
-      clearTimeout(timer);
-    };
+    return () => clearTimeout(timer);
   }, []);
 
   return (
