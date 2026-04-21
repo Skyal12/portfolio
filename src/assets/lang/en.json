@@ -55,7 +55,7 @@
 
     "project1": {
       "title": "Finance Management App",
-      "description": "A personal tool to track income, expenses, and monthly budgets. PHP, SQL, JS, Tailwind. Custom categories, dark mode, month-to-month comparison. Built because no existing tool fit exactly what I needed.",
+      "description": "I developed a personal finance management application to track my income, expenses, savings, and monthly budgets. The goal was to create a clear and structured tool that helps visualize spending habits and better understand overall financial balance.\n\nBuilt entirely with PHP, SQL, JS, and Tailwind for styling, the application includes custom categories, a light/dark mode, and a complete operation management system. Each new transaction automatically updates totals and the remaining balance.\n\nThe interface also allows comparing two different months to identify variations in spending and savings. This solo project allowed me to design a truly useful tool while implementing real business logic and a functional, readable interface.",
       "alt": "finance management project image",
       "techno1": "PHP",
       "techno2": "SQL",
@@ -64,7 +64,7 @@
 
     "project2": {
       "title": "ShiftUp",
-      "description": "Gamified CSR app for companies. Project lead: architecture, Figma wireframes, showcase site, React/Tailwind integration, PHP backend. Challenge system, KPI dashboard, responsible action tracking.",
+      "description": "ShiftUp is a gamified CSR application designed for companies.\n\nAs the project manager within a team, I created the site architecture, produced the Figma wireframes and mockups, developed the showcase website, handled the front-end integration in React/Tailwind, and contributed to the PHP backend and database.\n\nI also worked on the site's SEO. The application includes a challenge system, a KPI dashboard, and tools to track the evolution of responsible actions.",
       "alt": "ShiftUp project image",
       "techno1": "React",
       "techno2": "Tailwind",
@@ -73,7 +73,7 @@
 
     "project3": {
       "title": "Weather Dashboard",
-      "description": "Climate data analysis for the Marne region (1950–2022). Solo project. PHP, SQL, Chart.js, Leaflet. Trend curves, histograms, interactive map. As much a data project as an interface one.",
+      "description": "As part of the SAE 303 project, I developed a weather dashboard to analyze climate data from the Marne region (1950–2022). The project relied on a dedicated database and statistical calculations to highlight climate trends.\n\nBuilt entirely solo, it combines PHP, SQL, custom CSS, Chart.js, and Leaflet to produce interactive visualizations such as trend curves, year‑to‑year comparisons, histograms, and mapping.\n\nThe interface allows filtering data by time range or weather station to observe the impact of climate change through dynamic charts and an interactive map.",
       "alt": "weather dashboard project image",
       "techno1": "PHP",
       "techno2": "SQL",
@@ -82,7 +82,7 @@
 
     "project4": {
       "title": "Seconde Chance",
-      "description": "Short film made as a team for the Green Awards — youth category won. Technical role: equipment management, shot support. As much a communication project as a production one.",
+      "description": "Seconde Chance is a short film created as a team during my first year for the Green Awards, where we won the youth category.\n\nMy role was mainly technical: assisting with shots, managing equipment, and contributing occasionally to the ideation.\n\nThe film highlights second-hand consumption and recycling as an alternative to fast fashion, encouraging more responsible habits.",
       "alt": "Seconde Chance project image",
       "techno1": "Technical assistance",
       "techno2": "Equipment management",

@@ -55,7 +55,7 @@
 
     "project1": {
       "title": "App de Gestion Financière",
-      "description": "Un outil personnel pour suivre revenus, dépenses et budgets mensuels. PHP, SQL, JS, Tailwind. Catégories personnalisées, mode sombre, comparaison de mois. Conçu parce qu'aucun outil existant ne correspondait exactement à ce dont j'avais besoin.",
+      "description": "J'ai développé une application personnelle de gestion financière permettant de suivre mes revenus, dépenses, économies et budgets mensuels. L'objectif était de créer un outil clair et structuré pour visualiser mes habitudes de dépense et mieux comprendre mon équilibre financier.\n\nConçue entièrement en PHP, SQL, JS et Tailwind pour le style, l'application intègre des catégories personnalisées, un mode clair/sombre et un système complet de gestion des opérations. Chaque ajout de transaction met automatiquement à jour les totaux et le reste à vivre.\n\nL'interface permet également de comparer deux mois afin d'identifier les variations de dépenses et d'épargne. Ce projet solo m'a permis de concevoir un outil réellement utile tout en mettant en place une logique métier concrète et une interface fonctionnelle.",
       "alt": "image du projet de gestion financière",
       "techno1": "PHP",
       "techno2": "SQL",
@@ -64,7 +64,7 @@
 
     "project2": {
       "title": "ShiftUp",
-      "description": "Application RSE gamifiée pour entreprises. Chef de projet : arborescence, wireframes Figma, site vitrine, intégration React/Tailwind, back PHP. Système de défis, dashboard KPI, suivi des actions responsables.",
+      "description": "ShiftUp est une application RSE gamifiée destinée aux entreprises.\n\nEn tant que chef de projet dans un travail d'équipe, j'ai conçu l'arborescence, réalisé les maquettes et wireframes sur Figma, développé le site vitrine, assuré l'intégration front en React/Tailwind et contribué au back en PHP avec la base de données.\n\nJ'ai également travaillé sur le référencement du site. L'application propose un système de défis, un dashboard KPI et un suivi de l'évolution des actions responsables.",
       "alt": "image du projet ShiftUp",
       "techno1": "React",
       "techno2": "Tailwind",
@@ -73,7 +73,7 @@
 
     "project3": {
       "title": "Dashboard Météo",
-      "description": "Analyse des données climatologiques de la Marne (1950–2022). Solo. PHP, SQL, Chart.js, Leaflet. Courbes, histogrammes, carte interactive. Un projet de data autant que d'interface.",
+      "description": "Dans le cadre de la SAE 303, j'ai développé un dashboard météo permettant d'analyser les données climatologiques de la Marne (1950–2022). Le projet reposait sur une base de données dédiée et des calculs statistiques pour révéler les tendances climatiques.\n\nRéalisé en solo, il combine PHP, SQL, CSS personnalisé, Chart.js et Leaflet pour produire des visualisations interactives : courbes d'évolution, comparaisons par année, histogrammes et cartographie.\n\nL'interface permet de filtrer les données par période ou par station météo afin d'observer l'impact du changement climatique à travers des graphiques dynamiques et une carte interactive.",
       "alt": "image du projet 3",
       "techno1": "PHP",
       "techno2": "SQL",
@@ -82,7 +82,7 @@
 
     "project4": {
       "title": "Seconde Chance",
-      "description": "Court métrage réalisé en équipe pour les Green Awards — catégorie jeunes remportée. Rôle technique : gestion du matériel, assistance aux plans. Un projet de communication autant que de production.",
+      "description": "Seconde Chance est un court métrage réalisé en équipe lors de ma première année pour les Green Awards, où nous avons remporté la catégorie jeunes.\n\nMon rôle était principalement technique : assistance sur les plans, gestion du matériel et participation ponctuelle à l'idéation.\n\nLe film met en avant la seconde main et le recyclage face à la fast fashion, afin d'encourager une consommation plus responsable.",
       "alt": "image du projet 4",
       "techno1": "Assistance technique",
       "techno2": "Gestion du matériel",
