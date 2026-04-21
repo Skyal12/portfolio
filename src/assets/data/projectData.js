@@ -10,7 +10,7 @@ export const ProjectData = (t) => [
     techno1: t("projects.project1.techno1"),
     techno2: t("projects.project1.techno2"),
     techno3: t("projects.project1.techno3"),
-    image: "/projects/p1.jpeg",
+    image: `${import.meta.env.BASE_URL}projects/p1.jpeg`,
     url: false,
   },
   {
@@ -24,7 +24,7 @@ export const ProjectData = (t) => [
     techno1: t("projects.project2.techno1"),
     techno2: t("projects.project2.techno2"),
     techno3: t("projects.project2.techno3"),
-    image: "/projects/p2.jpeg",
+    image: `${import.meta.env.BASE_URL}projects/p2.jpeg`,
     url: "https://skyal12.github.io/Shift-Up-showcase-site/",
   },
   {
@@ -38,7 +38,7 @@ export const ProjectData = (t) => [
     techno1: t("projects.project3.techno1"),
     techno2: t("projects.project3.techno2"),
     techno3: t("projects.project3.techno3"),
-    image: "/projects/p3.jpeg",
+    image: `${import.meta.env.BASE_URL}projects/p3.jpeg`,
     url: false,
   },
   {
@@ -52,7 +52,7 @@ export const ProjectData = (t) => [
     techno1: t("projects.project4.techno1"),
     techno2: t("projects.project4.techno2"),
     techno3: t("projects.project4.techno3"),
-    image: "/projects/p4.jpeg",
+    image: `${import.meta.env.BASE_URL}projects/p4.jpeg`,
     url: "https://youtu.be/zELn6SYsIpY",
   },
 ];
