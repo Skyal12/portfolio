@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "title": "Alexis — Développeur Junior",
+    "description": "Développeur junior créant des expériences numériques structurées, cohérentes et durables.",
+    "ogTitle": "Alexis — Développeur Junior",
+    "ogDescription": "Développeur junior créant des expériences numériques structurées, cohérentes et durables.",
+    "keywords": "développeur, développeur front-end, portfolio, react, interfaces web, rouen, paris"
+  },
+
+  "hero": {
+    "available": "Disponible pour une alternance",
+    "work": "Développeur Junior",
+    "where": "Rouen — Paris",
+    "disponible": "Disponible septembre 2026",
+    "contact": "Me contacter"
+  },
+
+  "nav": {
+    "about": "À Propos",
+    "projects": "Projets",
+    "contact": "Contact"
+  },
+
+  "about": {
+    "text": "Rouen — Paris. Je conçois des interfaces pensées pour durer — structure d'abord, esthétique ensuite. L'audiovisuel affûte mon œil, le code discipline ma pensée. Je ne construis pas pour impressionner, je construis pour que ça fonctionne.",
+    "skills": "Skills",
+    "stack": "Ma stack",
+    "tools": "Pourquoi ces choix ?",
+    "toolsText": "Chaque outil a une raison d'être.",
+    "toolsText2": "React pour la modularité, PHP pour la solidité, Git pour l'historique.",
+    "toolsText3": "J'apprends ce qui sert un vrai besoin, pas pour collectionner.",
+    "vision": "Ma vision",
+    "visionText1": "Je ne code pas pour cocher des cases.",
+    "visionText2": "Je construis des interfaces pensées pour l'utilisateur.",
+    "visionText3": "Un bon produit, c'est structure et design qui se répondent."
+  },
+
+  "projects": {
+    "title1": "Mon approche",
+    "title2": "Projets",
+    "contact": "Travaillons ensemble",
+    "addProject": "Ajoutez votre projet",
+    "approach": "L'intention avant tout.",
+    "approachText1": "Chaque projet répond à un besoin précis. Pas de page créée pour exister — l'intention guide tout, du premier composant au dernier pixel.",
+    "approachText2": "Je choisis la stack après avoir compris le problème. Pas l'inverse.",
+    "approachText3": "Un bon projet, ça se lit au premier regard. Architecture et interface — même niveau d'exigence.",
+    "flow": "Flux",
+    "date": "Date",
+    "flow1": "Flux 1",
+    "flow2": "Flux 2",
+    "flow3": "Flux 3",
+    "Date1": "Decembre 2024 - Fevrier 2026",
+    "Date2": "Novembre - Décembre",
+    "Date3": "Janvier - Février",
+
+    "project1": {
+      "title": "App de Gestion Financière",
+      "description": "Un outil personnel pour suivre revenus, dépenses et budgets mensuels. PHP, SQL, JS, Tailwind. Catégories personnalisées, mode sombre, comparaison de mois. Conçu parce qu'aucun outil existant ne correspondait exactement à ce dont j'avais besoin.",
+      "alt": "image du projet de gestion financière",
+      "techno1": "PHP",
+      "techno2": "SQL",
+      "techno3": "JS"
+    },
+
+    "project2": {
+      "title": "ShiftUp",
+      "description": "Application RSE gamifiée pour entreprises. Chef de projet : arborescence, wireframes Figma, site vitrine, intégration React/Tailwind, back PHP. Système de défis, dashboard KPI, suivi des actions responsables.",
+      "alt": "image du projet ShiftUp",
+      "techno1": "React",
+      "techno2": "Tailwind",
+      "techno3": "PHP"
+    },
+
+    "project3": {
+      "title": "Dashboard Météo",
+      "description": "Analyse des données climatologiques de la Marne (1950–2022). Solo. PHP, SQL, Chart.js, Leaflet. Courbes, histogrammes, carte interactive. Un projet de data autant que d'interface.",
+      "alt": "image du projet 3",
+      "techno1": "PHP",
+      "techno2": "SQL",
+      "techno3": "CSS"
+    },
+
+    "project4": {
+      "title": "Seconde Chance",
+      "description": "Court métrage réalisé en équipe pour les Green Awards — catégorie jeunes remportée. Rôle technique : gestion du matériel, assistance aux plans. Un projet de communication autant que de production.",
+      "alt": "image du projet 4",
+      "techno1": "Assistance technique",
+      "techno2": "Gestion du matériel",
+      "techno3": "Aide aux plans"
+    },
+    "seeMore": "Voir le projet",
+    "techno": "Compétences utilisées"
+  },
+
+  "contact": {
+    "title": "Contactez-moi",
+    "email": "Mail :",
+    "phone": "Téléphone :",
+    "social": "Social"
+  },
+
+  "footer": {
+    "contact": "Contact",
+    "nav": "Navigation",
+    "home": "Accueil",
+    "about": "À propos",
+    "projects": "Projets",
+    "competences": "Compétences",
+    "note": "Note",
+    "noteText": "Disponible en alternance — septembre 2026"
+  }
+}

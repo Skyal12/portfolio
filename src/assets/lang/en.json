@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "title": "Alexis — Junior Developer",
+    "description": "Junior Developer crafting structured, coherent and durable digital experiences.",
+    "ogTitle": "Alexis — Junior Developer",
+    "ogDescription": "Junior Developer crafting structured, coherent and durable digital experiences.",
+    "keywords": "web developer, front-end developer, portfolio, react, digital interfaces, rouen, paris"
+  },
+
+  "hero": {
+    "available": "Available for an apprenticeship",
+    "work": "Junior Developer",
+    "where": "Rouen — Paris",
+    "disponible": "Available September 2026",
+    "contact": "Contact me"
+  },
+
+  "nav": {
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+
+  "about": {
+    "text": "Rouen — Paris. I design interfaces built to last — structure first, aesthetics second. Audiovisual sharpens my eye, code disciplines my thinking. I don't build to impress, I build to work.",
+    "skills": "Skills",
+    "stack": "My stack",
+    "tools": "Why these choices?",
+    "toolsText": "Every tool has a purpose.",
+    "toolsText2": "React for modularity, PHP for backend stability, Git for history.",
+    "toolsText3": "I learn what solves real problems — not to collect tools.",
+    "vision": "My vision",
+    "visionText1": "I don't code just to tick boxes.",
+    "visionText2": "I build interfaces shaped around the user.",
+    "visionText3": "A good product is structure and design working together."
+  },
+
+  "projects": {
+    "title1": "My approach",
+    "title2": "Projects",
+    "contact": "Let's work together",
+    "addProject": "Add your project",
+    "approach": "Intention first.",
+    "approachText1": "Every project answers a specific need. No page built just to exist — intention drives everything, from the first component to the last pixel.",
+    "approachText2": "I pick the stack after understanding the problem. Not before.",
+    "approachText3": "A good project reads itself at first glance. Architecture and interface — same standard.",
+    "flow": "Flow",
+    "date": "Date",
+    "flow1": "Flow 1",
+    "flow2": "Flow 2",
+    "flow3": "Flow 3",
+    "Date1": "December 2024 – February 2026",
+    "Date2": "November – December",
+    "Date3": "January – February",
+
+    "project1": {
+      "title": "Finance Management App",
+      "description": "A personal tool to track income, expenses, and monthly budgets. PHP, SQL, JS, Tailwind. Custom categories, dark mode, month-to-month comparison. Built because no existing tool fit exactly what I needed.",
+      "alt": "finance management project image",
+      "techno1": "PHP",
+      "techno2": "SQL",
+      "techno3": "JS"
+    },
+
+    "project2": {
+      "title": "ShiftUp",
+      "description": "Gamified CSR app for companies. Project lead: architecture, Figma wireframes, showcase site, React/Tailwind integration, PHP backend. Challenge system, KPI dashboard, responsible action tracking.",
+      "alt": "ShiftUp project image",
+      "techno1": "React",
+      "techno2": "Tailwind",
+      "techno3": "PHP"
+    },
+
+    "project3": {
+      "title": "Weather Dashboard",
+      "description": "Climate data analysis for the Marne region (1950–2022). Solo project. PHP, SQL, Chart.js, Leaflet. Trend curves, histograms, interactive map. As much a data project as an interface one.",
+      "alt": "weather dashboard project image",
+      "techno1": "PHP",
+      "techno2": "SQL",
+      "techno3": "CSS"
+    },
+
+    "project4": {
+      "title": "Seconde Chance",
+      "description": "Short film made as a team for the Green Awards — youth category won. Technical role: equipment management, shot support. As much a communication project as a production one.",
+      "alt": "Seconde Chance project image",
+      "techno1": "Technical assistance",
+      "techno2": "Equipment management",
+      "techno3": "Shot support"
+    },
+    "seeMore": "See more",
+    "techno": "Skills used"
+  },
+
+  "contact": {
+    "title": "Contact me",
+    "email": "Email:",
+    "phone": "Phone:",
+    "social": "Social"
+  },
+
+  "footer": {
+    "contact": "Contact",
+    "nav": "Navigation",
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "competences": "Skills",
+    "note": "Note",
+    "noteText": "Available for an apprenticeship — September 2026"
+  }
+}

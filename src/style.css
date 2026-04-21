@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Syne:wght@400..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+@import "tailwindcss";
+
+* {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overscroll-behavior: none;
+}
+
+:root {
+  --offset-1: 150%;
+  --offset-2: 300%;
+}
+
+/* theme */
+@theme {
+  --font-syne: "Syne", sans-serif;
+  --font-imb: "IBM Plex Mono", monospace;
+  --font-inter: "Inter", sans-serif;
+
+  --color-primary: #f7f7f7;
+  --color-secondary: #9b9b9b;
+  --color-tertiary: #353535;
+  --color-quaternary: #443c68;
+
+  --color-white: #f7f7f7;
+  --color-accent: #7b5ea7;
+
+  --border: #3d3d3d;
+}
+
+/* link */
+.link {
+  overflow: hidden;
+  display: inline-flex;
+  flex-direction: column;
+  height: 1.3em;
+  width: auto;
+}
+
+.link div {
+  transition: transform 0.3s ease-in-out;
+}
+
+.link div:first-child {
+  transform: translateY(0%);
+}
+
+.link div:last-child {
+  transform: translateY(0%);
+}
+
+.link:hover div:first-child {
+  transform: translateY(-100%);
+}
+
+.link:hover div:last-child {
+  transform: translateY(-100%);
+}
+
+/* word */
+.word {
+  display: inline-block;
+  opacity: 0;
+  transform: translateX(100%); /* hors champ à droite */
+  transition:
+    transform 0.6s ease-out,
+    opacity 0.6s ease-out;
+}
+
+.word.visible {
+  opacity: 1;
+  transform: translateX(0px); /* position normale */
+}
+
+.animate-bounce {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+  25% {
+    transform: translate3d(0, -40px, 0);
+  }
+  50% {
+    transform: translate3d(0, 0px, 0);
+  }
+  75% {
+    transform: translate3d(0, -20px, 0);
+  }
+}
+
+.project-accordion-items-content {
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition:
+    max-height 0.5s ease,
+    opacity 0.4s ease,
+    transform 0.4s ease;
+}
+
+/* Quand l'accordéon est ouvert */
+.project-accordion-items-content.active {
+  max-height: 1000px; /* assez grand pour contenir ton carrousel */
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Animation du bouton accordeon */
+.item-title.active .hamburger-line:first-child {
+  transform: rotate(90deg);
+}
+
+.item-title.active .hamburger-line:last-child {
+  transform: rotate(0deg);
+}
+
+.item-title .hamburger-line {
+  transition: transform 0.3s ease;
+}
+
+/* Animation du bouton projet */
+.close-project:hover .hamburger-line:first-child {
+  transform: rotate(45deg);
+}
+
+.close-project:hover .hamburger-line:last-child {
+  transform: rotate(-45deg);
+}
+
+.close-project .hamburger-line {
+  transition: transform 0.3s ease;
+  transform-origin: 45% 40%;
+}
+
+img {
+  overflow-clip-margin: content-box;
+}
+
+.corner-border {
+  position: relative;
+}
+
+.corner-border::before,
+.corner-border::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+}
+
+.corner-border::before {
+  top: 0;
+  left: 0;
+  border-top: 1px solid #3d3d3d;
+  border-left: 1px solid #3d3d3d;
+}
+
+.corner-border::after {
+  top: 0;
+  right: 0;
+  border-top: 1px solid #3d3d3d;
+  border-right: 1px solid #3d3d3d;
+}

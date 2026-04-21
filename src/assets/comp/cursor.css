@@ -1,0 +1,66 @@
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  pointer-events: none;
+  z-index: 9999;
+  margin-left: -12px;
+  margin-top: -12px;
+}
+
+/* Branche horizontale */
+.cursor__h {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #545454;
+  transition: background 0.2s ease;
+}
+
+/* Branche verticale */
+.cursor__v {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background: #545454;
+  transition: background 0.2s ease;
+}
+
+/* Rotation au hover → croix devient × */
+.cursor.is-hovering {
+  animation: cursor-rotate 0.3s ease forwards;
+}
+
+.cursor:not(.is-hovering) {
+  animation: cursor-unrotate 0.3s ease forwards;
+}
+
+@keyframes cursor-rotate {
+  from {
+    rotate: 0deg;
+  }
+  to {
+    rotate: 45deg;
+  }
+}
+
+@keyframes cursor-unrotate {
+  from {
+    rotate: 45deg;
+  }
+  to {
+    rotate: 0deg;
+  }
+}
+
+/* Accent violet au hover */
+.cursor.is-hovering .cursor__h,
+.cursor.is-hovering .cursor__v {
+  background: #7b5ea7;
+}
