@@ -87,7 +87,7 @@ export default function Projects({
     <section
       id="projects"
       data-section="projects"
-      className="h-auto  lg:h-[270vh] xl:h-[280vh] flex flex-col bg-primary relative "
+      className="h-auto md:h-[270vh] lg:h-[280vh] flex flex-col bg-primary relative "
       data-theme="light"
     >
       <div className="projects-text w-full px-4 md:px-20 py-12 flex flex-col md:flex-row items-start md:justify-between px-12 py-6 mb-20">
