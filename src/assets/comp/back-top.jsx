@@ -26,7 +26,7 @@ export default function BackTop() {
 
   return (
     <div
-      className={`back-top fixed z-20 right-32 bottom-[-1%] transition-all duration-300
+      className={`back-top hidden lg:block fixed z-20 right-32 bottom-[-1%] transition-all duration-300
         ${visible ? "bottom-4 opacity-100" : "bottom-[-50px] opacity-0"}
       `}
     >

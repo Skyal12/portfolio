@@ -15,29 +15,29 @@ export default function Contact() {
       <div className="flex flex-col lg:flex-row items-start justify-between h-1/2 px-12 py-6 gap-12 xl:gap-0">
         {/* Contact */}
         <div className="contact-info flex flex-col h-auto relative top-1/5 w-full lg:w-2/3 xl:w-2/3">
-          <h3 className="text-3xl lg:text-4xl xl:text-5xl font-imb text-secondary mb-12">
+          <h3 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-imb text-secondary mb-12">
             {t("contact.title")}
           </h3>
           <div className="flex flex-col xl:flex-row gap-12">
             <div className="flex flex-col gap-4">
-              <p className="text-xl xl:text-2xl font-imb text-tertiary mb-2">
+              <p className="text-md md:text-lg lg:text-xl xl:text-2xl font-imb text-tertiary mb-2">
                 {t("contact.email")}
               </p>
               <a
                 href="mailto:alexis.salmon.ss@gmail.com"
-                className="link underline font-syne text-xl xl:text-3xl text-tertiary"
+                className="link underline font-syne text-md md:text-lg lg:text-2xl xl:text-3xl text-tertiary"
               >
                 <div>alexis.salmon.ss@gmail.com</div>
                 <div>alexis.salmon.ss@gmail.com</div>
               </a>
             </div>
             <div className="flex flex-col gap-4">
-              <p className="text-xl xl:text-2xl font-imb text-tertiary mb-2">
+              <p className="text-md md:text-lg lg:text-xl xl:text-2xl font-imb text-tertiary mb-2">
                 {t("contact.phone")}
               </p>
               <a
                 href="tel:0624440892"
-                className="link underline font-syne text-xl xl:text-3xl text-tertiary"
+                className="link underline font-syne text-lg md:text-xl lg:text-2xl xl:text-3xl text-tertiary"
               >
                 <div>06 24 44 08 92</div>
                 <div>06 24 44 08 92</div>

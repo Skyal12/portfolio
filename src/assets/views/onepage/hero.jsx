@@ -39,7 +39,7 @@ export default function Hero() {
     >
       {/* NAVBAR animée */}
       <motion.div
-        className="absolute grid grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 w-full h-auto px-12 z-50"
+        className="absolute grid grid-cols-5 xl:grid-cols-6 w-full h-auto px-4 lg:px-12 z-50"
         style={{
           top: navTop,
           position: navPosition,
@@ -47,7 +47,7 @@ export default function Hero() {
       >
         {/* TEXTE */}
         <h3
-          className="hidden xl:block col-span-0 lg:col-span-2 text-xl font-imb w-full text-left font-syne"
+          className="hidden lg:block col-span-0 lg:col-span-2 text-xl font-imb w-full text-left font-syne"
           style={{
             color: isDark ? "#F0F0F0" : "#3d3d3d",
             transition: "color 0.4s ease",
@@ -55,7 +55,7 @@ export default function Hero() {
         >
           {t("hero.available")}
         </h3>
-        <div className="col-span-3 lg:col-span-2 col-start-2 lg:col-start-2 lg:col-start-4 flex flex-row justify-end gap-4">
+        <div className="col-span-4 lg:col-span-3 col-start-2 lg:col-start-4 flex flex-row justify-end">
           <NavBar />
         </div>
       </motion.div>

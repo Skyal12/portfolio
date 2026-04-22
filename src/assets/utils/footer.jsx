@@ -14,14 +14,14 @@ export default function Footer() {
           <div className="flex flex-col gap-2">
             <a
               href="mailto:alexis.salmon.ss@gmail.com"
-              className="link underline font-syne text-xl text-primary"
+              className="link underline font-syne text-sm md:text-lg lg:text-xl text-primary"
             >
               <div>alexis.salmon.ss@gmail.com</div>
               <div>alexis.salmon.ss@gmail.com</div>
             </a>
             <a
               href="tel:0624440892"
-              className="link underline font-syne text-xl text-primary"
+              className="link underline font-syne text-sm md:text-lg lg:text-xl text-primary"
             >
               <div>06 24 44 08 92</div>
               <div>06 24 44 08 92</div>
@@ -37,14 +37,14 @@ export default function Footer() {
             <div className="flex flex-row gap-4">
               <a
                 href="#hero"
-                className="link underline font-syne text-xl text-primary"
+                className="link underline font-syne text-sm md:text-lg lg:text-xl text-primary"
               >
                 <div className="relative">{t("footer.home")}</div>
                 <div className="relative">{t("footer.home")}</div>
               </a>
               <a
                 href="#about"
-                className="link underline w-full font-syne text-xl text-primary"
+                className="link underline w-full font-syne text-sm md:text-lg lg:text-xl text-primary"
               >
                 <div className="relative">{t("footer.about")}</div>
                 <div className="relative">{t("footer.about")}</div>
@@ -53,14 +53,14 @@ export default function Footer() {
             <div className="flex flex-row gap-4">
               <a
                 href="#projects"
-                className="link underline font-syne text-xl text-primary"
+                className="link underline font-syne text-sm md:text-lg lg:text-xl text-primary"
               >
                 <div className="relative">{t("footer.projects")}</div>
                 <div className="relative">{t("footer.projects")}</div>
               </a>
               <a
                 href="#stack"
-                className="link underline font-syne text-xl text-primary"
+                className="link underline font-syne text-sm md:text-lg lg:text-xl text-primary"
               >
                 <div className="relative">{t("footer.competences")}</div>
                 <div className="relative">{t("footer.competences")}</div>
@@ -73,7 +73,7 @@ export default function Footer() {
           <h3 className="text-xl font-imb text-white mb-6">
             {t("footer.note")}
           </h3>
-          <p className="font-syne text-xl text-primary">
+          <p className="font-syne text-sm md:text-lg lg:text-xl text-primary">
             {t("footer.noteText")}
           </p>
         </div>
@@ -81,7 +81,7 @@ export default function Footer() {
       <div className="flex flex-row justify-between items-center w-full mt-12">
         <a
           href="#"
-          className="font-syne font-extrabold text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-accent"
+          className="font-syne w-3/5 md:w-auto font-extrabold text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-accent"
         >
           Salmon Alexis
         </a>

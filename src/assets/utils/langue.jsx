@@ -103,47 +103,47 @@ export default function Langue() {
 
   return (
     <div
-      className="langue flex flex-row fixed top-7 right-4/5 lg:right-2/3 text-xl font-syne gap-1 text-tertiary z-50"
+      className="langue flex flex-row fixed top-[3%] right-[79%] md:right-[78%] lg:right-1/2 xl:right-2/3 text-sm md:text-lg lg:text-2xl font-syne gap-[2px] md:gap-1 text-tertiary z-50"
       style={{
         color: isDark ? "#F0F0F0" : "#3d3d3d",
         transition: "color 0.4s ease",
       }}
     >
       <button
-        className="relative langue-button px-1"
+        className="relative langue-button px-1 h-fit md:h-auto"
         onClick={() => setCurrentLang("fr")}
       >
         {currentLang === "fr" && (
           <>
-            <span className="absolute top-0 left-0 w-1 h-1 border-t border-l border-tertiary" />
-            <span className="absolute top-0 right-0 w-1 h-1 border-t border-r border-tertiary" />
-            <span className="absolute bottom-0 left-0 w-1 h-1 border-b border-l border-tertiary" />
-            <span className="absolute bottom-0 right-0 w-1 h-1 border-b border-r border-tertiary" />
+            <span className="absolute top-0 left-0 w-1 h-1 border-t border-l border-accent" />
+            <span className="absolute top-0 right-0 w-1 h-1 border-t border-r border-accent" />
+            <span className="absolute bottom-0 left-0 w-1 h-1 border-b border-l border-accent" />
+            <span className="absolute bottom-0 right-0 w-1 h-1 border-b border-r border-accent" />
           </>
         )}
-        <span className="link">
-          <div className="uppercase text-lg lg:text-2xl">FR</div>
-          <div className="uppercase text-lg lg:text-2xl">FR</div>
+        <span className="link text-sm md:text-lg lg:text-2xl">
+          <div className="uppercase">FR</div>
+          <div className="uppercase">FR</div>
         </span>
       </button>
 
       <p className="langue-separator">/</p>
 
       <button
-        className="relative link langue-button px-1"
+        className="relative langue-button px-1 h-fit md:h-auto"
         onClick={() => setCurrentLang("en")}
       >
         {currentLang === "en" && (
           <>
-            <span className="absolute top-0 left-0 w-1 h-1 border-t border-l border-tertiary" />
-            <span className="absolute top-0 right-0 w-1 h-1 border-t border-r border-tertiary" />
-            <span className="absolute bottom-0 left-0 w-1 h-1 border-b border-l border-tertiary" />
-            <span className="absolute bottom-0 right-0 w-1 h-1 border-b border-r border-tertiary" />
+            <span className="absolute top-0 left-0 w-1 h-1 border-t border-l border-accent" />
+            <span className="absolute top-0 right-0 w-1 h-1 border-t border-r border-accent" />
+            <span className="absolute bottom-0 left-0 w-1 h-1 border-b border-l border-accent" />
+            <span className="absolute bottom-0 right-0 w-1 h-1 border-b border-r border-accent" />
           </>
         )}
-        <span className="link">
-          <div className="uppercase text-lg lg:text-2xl">EN</div>
-          <div className="uppercase text-lg lg:text-2xl">EN</div>
+        <span className="link text-sm md:text-lg lg:text-2xl">
+          <div className="uppercase">EN</div>
+          <div className="uppercase">EN</div>
         </span>
       </button>
     </div>

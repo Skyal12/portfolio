@@ -71,7 +71,7 @@ export default function Projects({
     return () => {
       document.removeEventListener("click", handleOutsideClick);
     };
-  }, []);
+  });
 
   useEffect(() => {
     if (activeProject) {
@@ -87,7 +87,7 @@ export default function Projects({
     <section
       id="projects"
       data-section="projects"
-      className="h-auto md:h-[230vh] lg:h-[250vh] xl:h-[270vh] flex flex-col bg-primary relative "
+      className="h-auto md:h-[250vh] lg:h-[260vh] xl:h-[270vh] flex flex-col bg-primary relative "
       data-theme="light"
     >
       <div className="projects-text w-full px-4 md:px-20 py-12 flex flex-col md:flex-row items-start md:justify-between px-12 py-6 mb-20">
@@ -98,7 +98,7 @@ export default function Projects({
         </div>
         <div className="projects-description md:full md:w-2/3 lg:w-1/4 h-auto md:h-[125vh] flex flex-col gap-6 md:gap-12 justify-end">
           <p className="font-imb text-tertiary mb-2 flex flex-col gap-6">
-            <span className="font-syne lg:w-[200%] text-4xl lg:text-5xl xl:text-6xl font-extrabold text-tertiary mb-4">
+            <span className="font-syne lg:w-[200%] text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold text-tertiary mb-4">
               {t("projects.approach")}
             </span>
             <span className="font-ibm text-xs md:text-sm lg:text-md text-tertiary">
@@ -110,20 +110,20 @@ export default function Projects({
             <span className="font-ibm text-xs md:text-sm lg:text-md text-tertiary">
               2.0
             </span>
-            <span className="font-syne text-xl text-tertiary mb-4">
+            <span className="font-syne md:text-lg lg:text-xl xl:text-xl text-tertiary mb-4">
               {t("projects.approachText2")}
             </span>
             <span className="font-ibm text-xs md:text-sm lg:text-md text-tertiary">
               3.0
             </span>
-            <span className="font-syne text-xl text-tertiary">
+            <span className="font-syne md:text-lg lg:text-xl xl:text-xl text-tertiary">
               {t("projects.approachText3")}
             </span>
           </p>
           <button className="text-right md:text-left lg:text-right">
             <a
               href="#contact"
-              className="link underline font-imb font-medium text-xl"
+              className="link underline font-imb font-medium text-md md:text-lg xl:text-xl"
               style={{ width: "fit-content" }}
             >
               <div className="uppercase">{t("projects.contact")}</div>
@@ -294,10 +294,10 @@ export default function Projects({
               </div>
             </div>
             <hr />
-            <div className="projet-contact grid grid-cols-2 xl:grid-cols-5 justify-end gap-6 mt-4 mb-2">
+            <div className="projet-contact grid grid-cols-2 xl:grid-cols-5 justify-end mt-4 mb-2">
               <a
                 href="#contact"
-                className="col-start-2 xl:col-start-5 link underline font-ibm font-medium text-sm md:text-md lg:text-xl text-right"
+                className="col-start-1 col-span-2 md:col-start-2  xl:col-start-5 link underline font-ibm font-medium text-xs md:text-md lg:text-xl text-right"
               >
                 <div className="uppercase">{t("projects.addProject")}</div>
                 <div className="uppercase">{t("projects.addProject")}</div>

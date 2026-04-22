@@ -36,16 +36,16 @@ export default function ProjectOverlay({
   `}
     >
       <div
-        className={`project-card-text w-3/4 h-6/7 fixed px-8 py-4 flex flex-col gap-20 transition-all duration-500`}
+        className={`project-card-text w-3/4 h-6/7 fixed px-8 py-4 flex flex-col gap-4 md:gap-20 justify-between transition-all duration-500`}
         style={{
           background: project.bg,
           color: project.color,
           isolation: "isolate",
         }}
       >
-        <div className="h-1/3 w-full flex flex-col">
+        <div className="h-auto md:h-1/3 w-full flex flex-col">
           <div className="flex justify-between py-4 px-4">
-            <h4 className="project-card-title text-2xl font-bold font-ibm">
+            <h4 className="project-card-title text-md md:text-xl lg:text-2xl font-bold font-ibm">
               {project.title}
             </h4>
             <button
@@ -74,33 +74,35 @@ export default function ProjectOverlay({
             loading="lazy"
             src={project.image}
             alt={t(`projects.${project.key}.alt`)}
-            className="h-full w-full self-center object-contain pointer-events-none mb-4"
+            className="hidden md:block h-full w-full self-center object-contain pointer-events-none mb-4"
           />
         </div>
-        <div className="project-card-description flex flex-col gap-4 w-full h-1/3">
-          <p className="whitespace-pre-line font-ibm text-sm md:text-md lg:text-lg xl:text-xl">
+        <div className="project-card-description flex flex-col gap-4 w-full h-auto md:h-1/3">
+          <p className="whitespace-pre-line font-ibm text-xs lg:text-md xl:text-xl">
             {project?.description}
           </p>
         </div>
-        <div className="project-techno h-1/3 gap-12">
-          <h5 className="font-imb text-sm md:text-md lg:text-lg xl:text-xl mb-4 ">
+        <div className="project-techno h-auto md:h-1/3 gap-4 md:gap-12">
+          <h5 className="font-imb text-xs md:text-md lg:text-lg xl:text-xl mb-4 ">
             {t("projects.techno")}
           </h5>
-          <div className="flex flex-row justify-around w-full h-1/3 items-center">
-            <h5 className="font-imb text-sm md:text-md lg:text-lg xl:text-xl">
+          <div
+            className={`flex justify-around w-full h-auto md:h-1/3 items-center ${project.title == "Seconde Chance" ? "flex-col md:flex-row gap-2" : "flex-row"}`}
+          >
+            <h5 className="font-imb text-xs md:text-md lg:text-lg xl:text-xl">
               {t(`projects.${project.key}.techno1`)}
             </h5>
-            <h5 className="font-imb text-sm md:text-md lg:text-lg xl:text-xl">
+            <h5 className="font-imb text-xs md:text-md lg:text-lg xl:text-xl">
               {t(`projects.${project.key}.techno2`)}
             </h5>
-            <h5 className="font-imb text-sm md:text-md lg:text-lg xl:text-xl">
+            <h5 className="font-imb text-xs md:text-md lg:text-lg xl:text-xl">
               {t(`projects.${project.key}.techno3`)}
             </h5>
           </div>
           <div className="flex flex-row justify-end w-full h-1/3 items-center">
             {project.url && project.url !== false && (
               <a href={project.url} target="_blank" rel="noopener noreferrer">
-                <button className="seeMore link underline font-ibm font-medium text-sm md:text-md lg:text-xl text-end">
+                <button className="seeMore link underline font-ibm font-medium text-xs md:text-md lg:text-xl text-end">
                   <div className="uppercase">{t("projects.seeMore")}</div>
                   <div className="uppercase">{t("projects.seeMore")}</div>
                 </button>
