@@ -55,7 +55,7 @@ export default function Hero() {
         >
           {t("hero.available")}
         </h3>
-        <div className="col-span-4 lg:col-span-3 col-start-2 lg:col-start-4 flex flex-row justify-end">
+        <div className=" col-span-4 lg:col-span-3 col-start-2 lg:col-start-4 flex flex-row justify-end">
           <NavBar />
         </div>
       </motion.div>
@@ -83,8 +83,8 @@ export default function Hero() {
       <hr className="w-full border-none h-[2px] bg-secondary my-8" />
 
       {/* TITRE */}
-      <div className="grid grid-cols-1 xl:grid-cols-3 px-12 mb-80">
-        <h1 className="col-start-2 col-span-2 text-right text-3xl md:text-4xl lg:text-6xl pr-12 text-accent font-extrabold font-syne">
+      <div className="grid grid-cols-1 xl:grid-cols-3 px-4 md:px-12 lg:px-12 mb-80">
+        <h1 className="xl:col-start-2 xl:col-span-2 text-right text-2xl md:text-4xl lg:text-6xl lg:pr-12 text-accent font-extrabold font-syne">
           Salmon Alexis
         </h1>
       </div>

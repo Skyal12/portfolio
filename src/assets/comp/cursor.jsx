@@ -9,6 +9,7 @@ export default function Cursor() {
   const raf = useRef(null);
 
   useEffect(() => {
+    if (window.matchMedia("(pointer: coarse)").matches) return;
     const move = (e) => {
       mouse.current = { x: e.clientX, y: e.clientY };
     };

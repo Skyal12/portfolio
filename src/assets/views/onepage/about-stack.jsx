@@ -27,7 +27,7 @@ export default function Stack() {
   return (
     <div
       data-section="about"
-      className="about-stack h-[500vh] bg-black block p-12"
+      className="about-stack h-[600vh] bg-black block p-12"
       data-theme="dark"
     >
       <div className="stack sticky top-0 h-screen grid grid-rows-2 isolate overflow-hidden">

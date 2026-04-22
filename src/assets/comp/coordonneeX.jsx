@@ -4,8 +4,11 @@ export default function CoordonneeX() {
   const coordRef = useRef(null);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [isDark, setIsDark] = useState(false);
+  const isTouch = window.matchMedia("(pointer: coarse)").matches;
 
   useEffect(() => {
+    if (isTouch) return;
+
     const handleMouseMove = (e) => {
       if (coordRef.current) {
         coordRef.current.textContent = `${e.clientX} / ${windowWidth}`;
@@ -24,6 +27,7 @@ export default function CoordonneeX() {
         setIsDark(bg === "rgb(0, 0, 0)");
       }
     };
+
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
     };
@@ -35,13 +39,13 @@ export default function CoordonneeX() {
       window.removeEventListener("mousemove", handleMouseMove);
       window.removeEventListener("resize", handleResize);
     };
-  }, [windowWidth]);
+  }, [windowWidth, isTouch]);
 
   return (
     <div
       className={`coordonnee z-10 fixed bottom-4 left-12 text-md font-imb transition-colors duration-400 ${
-        isDark ? "text-white" : "text-tertiary"
-      }`}
+        isTouch ? "hidden" : ""
+      } ${isDark ? "text-white" : "text-tertiary"}`}
       ref={coordRef}
     />
   );

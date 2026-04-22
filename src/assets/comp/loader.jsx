@@ -18,7 +18,7 @@ export default function Loader() {
 
   return (
     <div
-      className={`loader bg-black w-screen h-screen fixed top-0 left-0 z-300 transition-all duration-500 ${loading ? "active" : ""}`}
+      className={`loader bg-black w-screen h-[150vh] fixed top-0 left-0 z-300 transition-all duration-500 ${loading ? "active" : ""}`}
     ></div>
   );
 }
