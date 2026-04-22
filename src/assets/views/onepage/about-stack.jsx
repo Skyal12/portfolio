@@ -56,7 +56,7 @@ export default function Stack() {
           </div>
         </div>
         <div className="stack-bottom h-full w-full">
-          <div className="stack-separator sticky my-auto grid grid-cols-3 md:grid-cols-6 xl:grid-cols-5 gap-6 mb-0 md:mb-12 lg:mb-0 xl:mb-12">
+          <div className="stack-separator sticky my-auto grid md:grid-cols-6 xl:grid-cols-5 gap-6 mb-0 md:mb-12 lg:mb-0 xl:mb-12">
             <div className="flex flex-col col-span-2 xl:col-span-1">
               <h4 className="text-md lg:text-lg text-primary font-ibm">
                 {t("about.vision")}
@@ -178,7 +178,7 @@ export default function Stack() {
             <p className="col-start-2 text-lg md:text-xl lg:text-2xl xl:text-3xl text-accent relative -top-6 lg:top-12 xl:top-20 left-0 md:left-8 lg:left-16 xl:left-24 font-syne px-2 lg:px-4 xl:px-8 py-2 xl:py-4 w-fit lg:w-full h-fit xl:h-auto bg-primary text-center font-imb">
               GIT
             </p>
-            <p className="col-start-3 lg:col-start-4 text-lg md:text-xl lg:text-2xl xl:text-3xl text-tertiary relative top-0 md:top-14 lg:top-32 xl:top-52 right-0 md:right-6 lg:right-12 xl:right-20 font-syne py-2 xl:py-4 w-fit lg:w-full h-fit xl:h-auto bg-secondary text-center font-imb">
+            <p className="col-start-3 lg:col-start-4 text-lg md:text-xl lg:text-2xl xl:text-3xl text-primary relative top-0 md:top-14 lg:top-32 xl:top-52 right-0 md:right-6 lg:right-12 xl:right-20 font-syne py-2 xl:py-4 w-fit lg:w-full h-fit xl:h-auto bg-quaternary text-center font-imb">
               WORDPRESS
             </p>
           </div>
