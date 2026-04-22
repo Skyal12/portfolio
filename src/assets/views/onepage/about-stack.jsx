@@ -74,7 +74,7 @@ export default function Stack() {
           </div>
           <div className="hidden md:block sticky top-1/8 h-40 overflow-hidden relative pl-20">
             <h3
-              className="title-frontend absolute right-12 text-7xl lg:text-8xl xl:text-9xl font-extrabold font-syne text-accent transition-transform duration-500"
+              className="title-frontend absolute right-12 text-6xl lg:text-7xl xl:text-9xl font-extrabold font-syne text-accent transition-transform duration-500"
               style={{
                 transform:
                   current === "frontend"
