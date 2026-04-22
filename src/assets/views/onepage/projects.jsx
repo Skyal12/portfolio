@@ -297,7 +297,7 @@ export default function Projects({
             <div className="projet-contact grid grid-cols-2 xl:grid-cols-5 justify-end mt-4 mb-2">
               <a
                 href="#contact"
-                className="col-start-1 col-span-2 md:col-start-2  xl:col-start-5 link underline font-ibm font-medium text-xs md:text-md lg:text-xl text-right"
+                className="col-start-1 col-span-2 md:col-start-2 xl:col-start-5 link underline font-ibm font-medium text-xs md:text-md lg:text-xl text-right"
               >
                 <div className="uppercase">{t("projects.addProject")}</div>
                 <div className="uppercase">{t("projects.addProject")}</div>

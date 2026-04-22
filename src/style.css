@@ -37,6 +37,17 @@ body {
 }
 
 /* link */
+
+@media (width >= 768px) {
+  .link:hover div:first-child {
+    transform: translateY(-100%);
+  }
+
+  .link:hover div:last-child {
+    transform: translateY(-100%);
+  }
+}
+
 .link {
   overflow: hidden;
   display: inline-flex;
@@ -55,14 +66,6 @@ body {
 
 .link div:last-child {
   transform: translateY(0%);
-}
-
-.link:hover div:first-child {
-  transform: translateY(-100%);
-}
-
-.link:hover div:last-child {
-  transform: translateY(-100%);
 }
 
 /* word */
@@ -132,15 +135,6 @@ body {
 
 .item-title .hamburger-line {
   transition: transform 0.3s ease;
-}
-
-/* Animation du bouton projet */
-.close-project:hover .hamburger-line:first-child {
-  transform: rotate(45deg);
-}
-
-.close-project:hover .hamburger-line:last-child {
-  transform: rotate(-45deg);
 }
 
 .close-project .hamburger-line {

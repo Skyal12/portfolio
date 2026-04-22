@@ -36,7 +36,7 @@ export default function ProjectOverlay({
   `}
     >
       <div
-        className={`project-card-text w-3/4 h-6/7 fixed px-8 py-4 flex flex-col gap-4 md:gap-20 justify-between transition-all duration-500`}
+        className={`project-card-text w-3/4 h-6/7 fixed px-8 py-4 flex flex-col gap-4 md:gap-20 justify-around transition-all duration-500`}
         style={{
           background: project.bg,
           color: project.color,
@@ -57,13 +57,13 @@ export default function ProjectOverlay({
               type="button"
             >
               <div
-                className="hamburger-line h-[1px] w-6"
+                className="hamburger-line h-[1px] w-6 rotate-45"
                 style={{
                   background: project.color,
                 }}
               />
               <div
-                className="hamburger-line h-[1px] w-6"
+                className="hamburger-line h-[1px] w-6 -rotate-45"
                 style={{
                   background: project.color,
                 }}
