@@ -7,9 +7,11 @@ export default function Cursor() {
   const mouse = useRef({ x: -100, y: -100 });
   const pos = useRef({ x: -100, y: -100 });
   const raf = useRef(null);
+  const isTouch = window.matchMedia("(pointer: coarse)").matches;
 
   useEffect(() => {
-    if (window.matchMedia("(pointer: coarse)").matches) return;
+    if (isTouch) return;
+
     const move = (e) => {
       mouse.current = { x: e.clientX, y: e.clientY };
     };
@@ -46,10 +48,10 @@ export default function Cursor() {
       window.removeEventListener("mouseover", handleOver);
       cancelAnimationFrame(raf.current);
     };
-  }, []);
+  }, [isTouch]);
 
   return createPortal(
-    <div ref={cursorRef} className="cursor">
+    <div ref={cursorRef} className={`cursor ${isTouch ? "hidden" : ""}`}>
       <span className="cursor__h" />
       <span className="cursor__v" />
     </div>,

@@ -80,7 +80,7 @@ export default function Hero() {
       </div>
 
       {/* HR */}
-      <hr className="w-full border-none h-[2px] bg-secondary my-8" />
+      <hr className="w-full border-none h-[2px] bg-secondary my-2 md:my-4 lg:my-8" />
 
       {/* TITRE */}
       <div className="grid grid-cols-1 xl:grid-cols-3 px-4 md:px-12 lg:px-12 mb-80">
