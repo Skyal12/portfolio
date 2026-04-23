@@ -22,17 +22,17 @@
   },
 
   "about": {
-    "text": "Rouen — Paris. Je conçois des interfaces pensées pour durer — structure d'abord, esthétique ensuite. L'audiovisuel affûte mon œil, le code discipline ma pensée. Je ne construis pas pour impressionner, je construis pour que ça fonctionne.",
+    "text": "Étudiant – Développeur en quête de connaissances. \n\nUne vision : occuper un rôle où l’esthétique et la praticité se complètent pour servir l’expérience utilisateur. \n\nRigoureux, autonome et curieux, je vois l’amélioration constante comme une mission, non une option.",
     "skills": "Skills",
-    "stack": "Ma stack",
-    "tools": "Pourquoi ces choix ?",
-    "toolsText": "Chaque outil a une raison d'être.",
-    "toolsText2": "React pour la modularité, PHP pour la solidité, Git pour l'historique.",
-    "toolsText3": "J'apprends ce qui sert un vrai besoin, pas pour collectionner.",
+    "stack": "Mes engagements",
+    "tools": "Stagner n’est pas permis.",
+    "toolsText": "Progresser est une nécessité, pas un confort.",
+    "toolsText2": "J’améliore mes projets en suivant une discipline : comprendre, corriger, affiner.",
+    "toolsText3": "L’engagement, c’est avancer — toujours.",
     "vision": "Ma vision",
-    "visionText1": "Je ne code pas pour cocher des cases.",
-    "visionText2": "Je construis des interfaces pensées pour l'utilisateur.",
-    "visionText3": "Un bon produit, c'est structure et design qui se répondent."
+    "visionText1": "Je pars d’un besoin. Une interface n’existe que si elle sert.",
+    "visionText2": "Structure, couleurs, typographies : chaque choix doit avoir un rôle.",
+    "visionText3": "Un design n’a de valeur que s’il améliore l’usage. "
   },
 
   "projects": {
@@ -40,10 +40,10 @@
     "title2": "Projets",
     "contact": "Travaillons ensemble",
     "addProject": "Ajoutez votre projet",
-    "approach": "L'intention avant tout.",
-    "approachText1": "Chaque projet répond à un besoin précis. Pas de page créée pour exister — l'intention guide tout, du premier composant au dernier pixel.",
-    "approachText2": "Je choisis la stack après avoir compris le problème. Pas l'inverse.",
-    "approachText3": "Un bon projet, ça se lit au premier regard. Architecture et interface — même niveau d'exigence.",
+    "approach": "L’intention avant tout.",
+    "approachText1": "Une intention donne naissance à l’idée. Le besoin en trace la direction. Chaque choix doit servir cette intention, du premier composant au dernier pixel.",
+    "approachText2": "Chaque projet est unique et demande des compétences différentes. Je commence par comprendre le problème, puis je choisis les outils qui y répondent.",
+    "approachText3": "Un projet reste humain avant tout. L’architecture et le design doivent traduire cette humanité avec exigence.",
     "flow": "Flux",
     "date": "Date",
     "flow1": "Flux 1",

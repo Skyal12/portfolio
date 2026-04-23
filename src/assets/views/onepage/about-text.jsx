@@ -19,11 +19,21 @@ export default function About() {
 
     const wrapWordsInSpan = (element) => {
       if (!element) return;
-      const text = element.textContent.trim();
-      element.innerHTML = text
-        .split(/\s+/)
-        .map((w) => `<span class="word">${escapeHtml(w)}</span>`)
-        .join(" ");
+      const rawText = element.dataset.raw || element.textContent;
+      const lines = rawText.split("\n");
+
+      // On transforme chaque ligne en spans de mots
+      const html = lines
+        .map((line) => {
+          const words = line.trim().split(/\s+/);
+          return words
+            .map((w) => `<span class="word">${escapeHtml(w)}</span>`)
+            .join(" ");
+        })
+        .join("<br/>");
+
+      // On injecte le HTML final
+      element.innerHTML = html;
     };
 
     const aboutSection = document.querySelector(".section_about");
@@ -83,7 +93,10 @@ export default function About() {
     >
       <div className="pin-height h-[300vh] w-full">
         <div className="container-global sticky top-0 h-screen w-full flex flex-col p-12 justify-center overflow-hidden gap-12">
-          <div className="about-text text-xl lg:text-2xl xl:text-4xl font-bold text-primary font-syne max-w-full lg:max-w-2/3 text-start leading-tight">
+          <div
+            className="about-text text-xl lg:text-2xl xl:text-4xl font-bold text-primary font-syne max-w-full lg:max-w-2/3 text-start leading-tight"
+            data-raw={t("about.text")}
+          >
             {t("about.text")}
           </div>
         </div>

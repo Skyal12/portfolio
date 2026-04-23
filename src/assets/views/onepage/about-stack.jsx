@@ -163,7 +163,7 @@ export default function Stack() {
           {/* Ligne 2 */}
           <div className="stack-row grid grid-cols-4 lg:grid-cols-5 w-full h-1/5">
             <p className="col-start-2 text-lg md:text-xl lg:text-2xl xl:text-3xl text-primary relative left-0 md:left-16 lg:left-32 xl:left-52 top-0 md:top-4 lg:top-8 xl:top-12 font-syne px-2 lg:px-4 xl:px-8 py-2 xl:py-4 w-fit lg:w-full h-fit xl:h-auto bg-accent text-center font-imb">
-              SQL
+              MySQL
             </p>
           </div>
         </div>

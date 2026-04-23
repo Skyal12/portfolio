@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { useScroll, useTransform } from "framer-motion";
 import { useLanguage } from "../../utils/langue.jsx";
 import { motion } from "framer-motion";
+import chevron from "../../img/chevron.png";
 
 export default function Hero() {
   const { t } = useLanguage();
@@ -90,10 +91,8 @@ export default function Hero() {
       </div>
 
       {/* SCROLL */}
-      <div className="grid place-items-center pt-12 pb-12">
-        <h3 className="animate-bounce text-xl font-imb text-secondary">
-          [ Scroll ]
-        </h3>
+      <div className="animate-bounce grid place-items-center pb-12 pt-12 opacity-70">
+        <img src={chevron} className="size-8 rotate-90" />
       </div>
       <div data-section="hero" className="h-4" data-theme="light"></div>
     </section>
