@@ -27,14 +27,19 @@ export default function Stack() {
   return (
     <div
       data-section="about"
-      className="about-stack h-[560vh] md:h-[460vh] lg:h-[380vh] xl:h-[365vh] bg-black block p-12"
+      className="about-stack h-[600vh] bg-black block p-12"
       data-theme="dark"
     >
       <div className="stack sticky top-0 h-screen grid grid-rows-2 isolate overflow-hidden">
-        <div className="stack-top h-full w-full">
-          <h3 className=" text-3xl md:text-7xl lg:text-8xl xl:text-9xl z-10 mb-8 text-primary sticky top-1/8 pl-0 lg:pl-20 font-syne">
-            {t("about.skills")}
-          </h3>
+        <div className="stack-top h-full w-full sticky top-1/8 pl-0 lg:pl-20 z-10 mb-8">
+          <div class="flex flex-col">
+            <h3 className=" text-6xl md:text-7xl lg:text-8xl xl:text-9xl text-primary font-syne">
+              {t("about.skills")}
+            </h3>
+            <p class="font-ibm text-[9px] tracking-widest text-accent uppercase before:content-[''] before:inline-block before:w-2 before:h-2 before:bg-accent before:mr-2 before:align-middle">
+              {t("about.skillsText")}
+            </p>
+          </div>
           <div className="stack-separator grid grid-cols-3 md:grid-cols-5 gap-6">
             <h4 className="hidden md:block col-start-2 md:col-start-3 col-span-1 text-lg mb-8 text-primary text-end lg:text-start relative top-16 md:top-0 font-ibm">
               {t("about.stack")}
@@ -127,11 +132,11 @@ export default function Stack() {
           <div className="stack-row grid grid-cols-4 lg:grid-cols-5 w-full h-1/5">
             <div className="skill col-start-1 lg:col-start-2 text-lg md:text-xl lg:text-2xl xl:text-3xl px-2 lg:px-4 xl:px-8 py-2 xl:py-4 w-fit lg:w-full h-fit text-center font-imb">
               <span className="skill-name">REACT</span>
-              <span className="skill-count">4</span>
+              <span className="skill-count">6</span>
             </div>
             <div className="skill col-start-3 lg:col-start-4 text-lg md:text-xl lg:text-2xl xl:text-3xl relative top-10 lg:top-20 xl:top-40 -right-8 lg:right-0 xl:right-40 px-2 lg:px-4 xl:px-8 py-2 xl:py-4 w-fit lg:w-full h-fit text-center font-imb">
               <span className="skill-name">HTML</span>
-              <span className="skill-count">6</span>
+              <span className="skill-count">15</span>
             </div>
           </div>
 
@@ -139,11 +144,11 @@ export default function Stack() {
           <div className="stack-row grid grid-cols-4 lg:grid-cols-5 w-full h-1/5">
             <div className="skill col-start-2 text-lg md:text-xl lg:text-2xl xl:text-3xl relative left-0 md:left-10 lg:left-24 xl:left-40 px-2 lg:px-4 xl:px-8 py-2 xl:py-4 w-fit lg:w-full h-fit text-center font-imb">
               <span className="skill-name">JS</span>
-              <span className="skill-count">8</span>
+              <span className="skill-count">7</span>
             </div>
             <div className="skill col-start-4 text-lg md:text-xl lg:text-2xl xl:text-3xl relative top-10 lg:top-20 xl:top-40 left-0 md:left-10 lg:left-24 xl:left-40 px-2 lg:px-4 xl:px-8 py-2 xl:py-4 w-fit lg:w-full h-fit text-center font-imb">
               <span className="skill-name">CSS</span>
-              <span className="skill-count">6</span>
+              <span className="skill-count">10</span>
             </div>
           </div>
         </div>
@@ -160,7 +165,7 @@ export default function Stack() {
             </div>
             <div className="skill col-start-4 text-lg md:text-xl lg:text-2xl xl:text-3xl relative top-8 lg:top-16 xl:top-32 left-0 md:left-4 lg:left-8 xl:left-12 px-2 lg:px-4 xl:px-8 py-2 xl:py-4 w-fit lg:w-full h-fit text-center font-imb">
               <span className="skill-name">PHP</span>
-              <span className="skill-count">2</span>
+              <span className="skill-count">4</span>
             </div>
           </div>
 
@@ -168,7 +173,7 @@ export default function Stack() {
           <div className="stack-row grid grid-cols-4 lg:grid-cols-5 w-full h-1/5">
             <div className="skill col-start-2 text-lg md:text-xl lg:text-2xl xl:text-3xl relative left-0 md:left-16 lg:left-32 xl:left-52 top-0 md:top-4 lg:top-8 xl:top-12 px-2 lg:px-4 xl:px-8 py-2 xl:py-4 w-fit lg:w-full h-fit text-center font-imb">
               <span className="skill-name">MySQL</span>
-              <span className="skill-count">2</span>
+              <span className="skill-count">4</span>
             </div>
           </div>
         </div>
@@ -182,7 +187,7 @@ export default function Stack() {
           <div className="stack-row grid grid-cols-4 lg:grid-cols-5 w-full h-1/5">
             <div className="skill col-start-1 text-lg md:text-xl lg:text-2xl xl:text-3xl relative -top-6 lg:top-12 xl:top-20 left-0 md:left-8 lg:left-16 xl:left-24 px-2 lg:px-4 xl:px-8 py-2 xl:py-4 w-fit lg:w-full h-fit text-center font-imb">
               <span className="skill-name">GIT</span>
-              <span className="skill-count">9</span>
+              <span className="skill-count">4</span>
             </div>
             <div className="skill col-start-3 lg:col-start-4 text-lg md:text-xl lg:text-2xl xl:text-3xl relative top-20 md:top-14 lg:top-8 xl:top-4 right-6 lg:right-12 xl:right-20 py-2 xl:py-4 w-fit lg:w-full h-fit text-center font-imb">
               <span className="skill-name">WORDPRESS</span>
