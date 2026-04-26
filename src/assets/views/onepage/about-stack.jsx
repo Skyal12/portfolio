@@ -27,7 +27,7 @@ export default function Stack() {
   return (
     <div
       data-section="about"
-      className="about-stack h-[600vh] bg-black block p-12"
+      className="about-stack h-[560vh] md:h-[460vh] lg:h-[380vh] xl:h-[365vh] bg-black block p-12"
       data-theme="dark"
     >
       <div className="stack sticky top-0 h-screen grid grid-rows-2 isolate overflow-hidden">
@@ -120,30 +120,33 @@ export default function Stack() {
       <div className="stack-content z-20 flex flex-col gap-24 mt-12">
         {/* FRONTEND */}
         <div
-          className="stack-category grid grid-rows-3 gap-90 pt-80"
+          className="stack-category grid grid-rows-3 gap-90 mt-24"
           data-title="frontend"
         >
           {/* Ligne 1 */}
           <div className="stack-row grid grid-cols-4 lg:grid-cols-5 w-full h-1/5">
-            <p className="col-start-1 lg:col-start-2 text-lg md:text-xl lg:text-2xl xl:text-3xl text-tertiary font-syne px-2 lg:px-4 xl:px-8 py-2 xl:py-4 bg-primary w-fit lg:w-full h-fit xl:h-auto text-center font-imb">
-              REACT
-            </p>
-            <p className="col-start-3 text-lg md:text-xl lg:text-2xl xl:text-3xl text-primary relative top-10 lg:top-20 xl:top-40 font-syne px-2 lg:px-4 xl:px-8 py-2 xl:py-4 bg-accent w-fit lg:w-full text-center font-imb">
-              HTML
-            </p>
+            <div className="skill col-start-1 lg:col-start-2 text-lg md:text-xl lg:text-2xl xl:text-3xl px-2 lg:px-4 xl:px-8 py-2 xl:py-4 w-fit lg:w-full h-fit text-center font-imb">
+              <span className="skill-name">REACT</span>
+              <span className="skill-count">4</span>
+            </div>
+            <div className="skill col-start-3 lg:col-start-4 text-lg md:text-xl lg:text-2xl xl:text-3xl relative top-10 lg:top-20 xl:top-40 -right-8 lg:right-0 xl:right-40 px-2 lg:px-4 xl:px-8 py-2 xl:py-4 w-fit lg:w-full h-fit text-center font-imb">
+              <span className="skill-name">HTML</span>
+              <span className="skill-count">6</span>
+            </div>
           </div>
 
           {/* Ligne 2 */}
           <div className="stack-row grid grid-cols-4 lg:grid-cols-5 w-full h-1/5">
-            <p className="col-start-2 text-lg md:text-xl lg:text-2xl xl:text-3xl text-primary relative left-0 md:left-10 lg:left-24 xl:left-40 font-syne px-2 lg:px-4 xl:px-8 py-2 xl:py-4 bg-quaternary w-fit lg:w-full text-center font-imb">
-              JS
-            </p>
-            <p className="col-start-4 text-lg md:text-xl lg:text-2xl xl:text-3xl text-tertiary relative top-10 lg:top-20 xl:top-40 left-0 md:left-10 lg:left-24 xl:left-40 font-syne px-2 lg:px-4 xl:px-8 py-2 xl:py-4 bg-primary w-fit lg:w-full text-center font-imb">
-              CSS
-            </p>
+            <div className="skill col-start-2 text-lg md:text-xl lg:text-2xl xl:text-3xl relative left-0 md:left-10 lg:left-24 xl:left-40 px-2 lg:px-4 xl:px-8 py-2 xl:py-4 w-fit lg:w-full h-fit text-center font-imb">
+              <span className="skill-name">JS</span>
+              <span className="skill-count">8</span>
+            </div>
+            <div className="skill col-start-4 text-lg md:text-xl lg:text-2xl xl:text-3xl relative top-10 lg:top-20 xl:top-40 left-0 md:left-10 lg:left-24 xl:left-40 px-2 lg:px-4 xl:px-8 py-2 xl:py-4 w-fit lg:w-full h-fit text-center font-imb">
+              <span className="skill-name">CSS</span>
+              <span className="skill-count">6</span>
+            </div>
           </div>
         </div>
-
         {/* BACKEND */}
         <div
           className="stack-category grid grid-rows-3 gap-90 mt-24"
@@ -151,20 +154,22 @@ export default function Stack() {
         >
           {/* Ligne 1 */}
           <div className="stack-row grid grid-cols-4 lg:grid-cols-5 w-full h-1/5">
-            <p className="col-start-1 lg:col-start-2 text-lg md:text-xl lg:text-2xl xl:text-3xl text-primary relative -right-8 lg:-right-12 xl:-right-20 font-syne px-2 lg:px-4 xl:px-8 py-2 xl:py-4 w-fit lg:w-full h-fit xl:h-auto bg-quaternary text-center font-imb">
-              NODE.JS
-            </p>
-
-            <p className="col-start-4 text-lg md:text-xl lg:text-2xl xl:text-3xl text-tertiary relative top-8 lg:top-16 xl:top-32 left-0 md:left-4 lg:left-8 xl:left-12 font-syne px-2 lg:px-4 xl:px-8 py-2 xl:py-4 w-fit lg:w-full h-fit xl:h-auto bg-primary text-center font-imb">
-              PHP
-            </p>
+            <div className="skill col-start-1 lg:col-start-2 text-lg md:text-xl lg:text-2xl xl:text-3xl relative right-0 md:-right-8 lg:-right-12 xl:-right-20 px-2 lg:px-4 xl:px-8 py-2 xl:py-4 w-fit lg:w-full h-fit text-center font-imb">
+              <span className="skill-name">NODE.JS</span>
+              <span className="skill-count">2</span>
+            </div>
+            <div className="skill col-start-4 text-lg md:text-xl lg:text-2xl xl:text-3xl relative top-8 lg:top-16 xl:top-32 left-0 md:left-4 lg:left-8 xl:left-12 px-2 lg:px-4 xl:px-8 py-2 xl:py-4 w-fit lg:w-full h-fit text-center font-imb">
+              <span className="skill-name">PHP</span>
+              <span className="skill-count">2</span>
+            </div>
           </div>
 
           {/* Ligne 2 */}
           <div className="stack-row grid grid-cols-4 lg:grid-cols-5 w-full h-1/5">
-            <p className="col-start-2 text-lg md:text-xl lg:text-2xl xl:text-3xl text-primary relative left-0 md:left-16 lg:left-32 xl:left-52 top-0 md:top-4 lg:top-8 xl:top-12 font-syne px-2 lg:px-4 xl:px-8 py-2 xl:py-4 w-fit lg:w-full h-fit xl:h-auto bg-accent text-center font-imb">
-              MySQL
-            </p>
+            <div className="skill col-start-2 text-lg md:text-xl lg:text-2xl xl:text-3xl relative left-0 md:left-16 lg:left-32 xl:left-52 top-0 md:top-4 lg:top-8 xl:top-12 px-2 lg:px-4 xl:px-8 py-2 xl:py-4 w-fit lg:w-full h-fit text-center font-imb">
+              <span className="skill-name">MySQL</span>
+              <span className="skill-count">2</span>
+            </div>
           </div>
         </div>
 
@@ -175,22 +180,29 @@ export default function Stack() {
         >
           {/* Ligne 1 */}
           <div className="stack-row grid grid-cols-4 lg:grid-cols-5 w-full h-1/5">
-            <p className="col-start-2 text-lg md:text-xl lg:text-2xl xl:text-3xl text-accent relative -top-6 lg:top-12 xl:top-20 left-0 md:left-8 lg:left-16 xl:left-24 font-syne px-2 lg:px-4 xl:px-8 py-2 xl:py-4 w-fit lg:w-full h-fit xl:h-auto bg-primary text-center font-imb">
-              GIT
-            </p>
-            <p className="col-start-3 lg:col-start-4 text-lg md:text-xl lg:text-2xl xl:text-3xl text-primary relative top-0 md:top-14 lg:top-32 xl:top-52 right-0 md:right-6 lg:right-12 xl:right-20 font-syne py-2 xl:py-4 w-fit lg:w-full h-fit xl:h-auto bg-quaternary text-center font-imb">
-              WORDPRESS
-            </p>
+            <div className="skill col-start-1 text-lg md:text-xl lg:text-2xl xl:text-3xl relative -top-6 lg:top-12 xl:top-20 left-0 md:left-8 lg:left-16 xl:left-24 px-2 lg:px-4 xl:px-8 py-2 xl:py-4 w-fit lg:w-full h-fit text-center font-imb">
+              <span className="skill-name">GIT</span>
+              <span className="skill-count">9</span>
+            </div>
+            <div className="skill col-start-3 lg:col-start-4 text-lg md:text-xl lg:text-2xl xl:text-3xl relative top-20 md:top-14 lg:top-8 xl:top-4 right-6 lg:right-12 xl:right-20 py-2 xl:py-4 w-fit lg:w-full h-fit text-center font-imb">
+              <span className="skill-name">WORDPRESS</span>
+              <span className="skill-count">3</span>
+            </div>
           </div>
 
           {/* Ligne 2 */}
-          <div className="stack-row grid grid-cols-4 lg:grid-cols-5 w-full h-1/5">
-            <p className="col-start-1 text-lg md:text-xl lg:text-2xl xl:text-3xl text-primary relative  -right-6 md:left-12 lg:left-24 xl:left-40 top-0 md:top-10 lg:top-20 xl:top-36 font-syne px-2 lg:px-4 xl:px-8 py-2 xl:py-4 w-fit lg:w-full h-fit xl:h-auto bg-accent text-center font-imb">
-              TAILWIND
-            </p>
-            <p className="col-start-3 text-lg md:text-xl lg:text-2xl xl:text-3xl text-tertiary relative -top-20 xl:top-16 left-0 md:left-12 lg:left-24 xl:left-40 font-syne px-2 lg:px-4 xl:px-8 py-2 xl:py-4 w-fit lg:w-full h-fit xl:h-auto bg-primary text-center font-imb">
-              FIGMA
-            </p>
+          <div
+            className="stack-row grid grid-cols-4 lg:grid-cols-5 w-full h-1/5"
+            data-title="outils"
+          >
+            <div className="skill col-start-1 text-lg md:text-xl lg:text-2xl xl:text-3xl relative -right-0 md:left-12 lg:left-24 xl:left-40 top-20 md:top-10 lg:top-20 xl:top-36 px-2 lg:px-4 xl:px-8 py-2 xl:py-4 w-fit lg:w-full h-fit text-center font-imb">
+              <span className="skill-name">TAILWIND</span>
+              <span className="skill-count">4</span>
+            </div>
+            <div className="skill col-start-3 text-lg md:text-xl lg:text-2xl xl:text-3xl relative -top-20 xl:top-16 left-0 md:left-12 lg:left-24 xl:left-40 px-2 lg:px-4 xl:px-8 py-2 xl:py-4 w-fit lg:w-full h-fit text-center font-imb">
+              <span className="skill-name">FIGMA</span>
+              <span className="skill-count">5</span>
+            </div>
           </div>
         </div>
       </div>

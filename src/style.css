@@ -170,3 +170,47 @@ img {
   border-top: 1px solid #3d3d3d;
   border-right: 1px solid #3d3d3d;
 }
+
+.skill {
+  border: 1.5px solid #fff;
+  padding: 16px 22px;
+  background: #0c0c0c;
+  position: relative;
+  overflow: hidden;
+  cursor: default;
+}
+
+.skill::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 6px;
+  height: 6px;
+  background: #7c5cbf;
+}
+
+.skill .skill-name {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+.skill .skill-count {
+  position: absolute;
+  bottom: -5px;
+  right: 6px;
+  font-size: 52px;
+  font-weight: 700;
+  color: #1e1e1e;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  user-select: none;
+  transition: color 0.2s ease;
+}
+
+.skill:hover .skill-count {
+  color: #7c5cbf;
+}
