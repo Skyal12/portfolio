@@ -18,7 +18,7 @@ export const ProjectData = (t) => [
     key: "project2",
     title: t("projects.project2.title"),
     description: t("projects.project2.description"),
-    bg: "#ff4800",
+    bg: "#825e50",
     color: "#FFFFFF",
     alt: t("projects.project2.alt"),
     techno1: t("projects.project2.techno1"),

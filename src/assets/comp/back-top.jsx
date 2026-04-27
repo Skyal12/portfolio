@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 export default function BackTop() {
-  const [visible, setVisible] = useState(true);
+  const [visible, setVisible] = useState(false);
   const [lastScroll, setLastScroll] = useState(0);
 
   useEffect(() => {

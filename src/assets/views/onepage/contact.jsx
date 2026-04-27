@@ -55,14 +55,14 @@ export default function Contact() {
             <a
               href="https://github.com/Skyal12"
               target="_blank"
-              className="size-24 xl:size-40"
+              className="size-24 xl:size-30"
             >
               <img loading="lazy" src={github} alt="github" />
             </a>
             <a
               href="https://www.linkedin.com/in/alexis-salmon12"
               target="_blank"
-              className="size-24 lg:size-24 xl:size-40"
+              className="size-24 lg:size-24 xl:size-30"
             >
               <img loading="lazy" src={linkedin} alt="linkedin" />
             </a>

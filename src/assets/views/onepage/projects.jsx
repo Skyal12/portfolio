@@ -169,10 +169,7 @@ export default function Projects({
               </h4>
             </div>
           </div>
-          <div
-            className="project-accordion-items"
-            onClick={() => setActive(false)}
-          >
+          <div className="project-accordion-items">
             {/* items global */}
             <hr />
             <div
