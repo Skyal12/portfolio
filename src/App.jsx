@@ -9,8 +9,11 @@ import BackTop from "./assets/comp/back-top";
 import CoordonneeX from "./assets/comp/coordonneeX";
 import CoordonneeY from "./assets/comp/coordonneeY";
 import Loader from "./assets/comp/loader.jsx";
+import { useLenis } from "./assets/utils/useLenis";
 
 function App() {
+  useLenis();
+
   return (
     <ErrorBoundary>
       <LanguageProvider>

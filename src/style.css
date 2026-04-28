@@ -208,7 +208,6 @@ img {
   line-height: 1;
   letter-spacing: -0.02em;
   user-select: none;
-  transition: color 0.2s ease;
 }
 
 .skill:hover .skill-count {
