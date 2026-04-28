@@ -242,8 +242,8 @@ export default function Projects({
                         />
 
                         {/* TEXTE QUI APPARAÎT AU HOVER */}
-                        <div className="absolute inset-0 flex flex-col justify-center items-center p-6 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                          <h4 className="text-xl font-bold text-white drop-shadow-lg">
+                        <div className="absolute inset-0 flex flex-col justify-center items-start p-6 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                          <h4 className="text-2xl font-extrabold text-white drop-shadow-lg font-syne">
                             {project.title}
                           </h4>
                         </div>

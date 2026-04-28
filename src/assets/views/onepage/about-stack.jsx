@@ -32,11 +32,11 @@ export default function Stack() {
     >
       <div className="stack sticky top-0 h-screen grid grid-rows-2 isolate overflow-hidden">
         <div className="stack-top h-full w-full sticky top-1/8 pl-0 lg:pl-20 z-10 mb-8">
-          <div class="flex flex-col">
+          <div className="flex flex-col">
             <h3 className=" text-6xl md:text-7xl lg:text-8xl xl:text-9xl text-primary font-syne">
               {t("about.skills")}
             </h3>
-            <p class="font-ibm text-[9px] tracking-widest text-accent uppercase before:content-[''] before:inline-block before:w-2 before:h-2 before:bg-accent before:mr-2 before:align-middle">
+            <p className="font-ibm text-[9px] tracking-widest text-accent uppercase before:content-[''] before:inline-block before:w-2 before:h-2 before:bg-accent before:mr-2 before:align-middle">
               {t("about.skillsText")}
             </p>
           </div>

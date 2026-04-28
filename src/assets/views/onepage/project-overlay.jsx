@@ -45,7 +45,7 @@ export default function ProjectOverlay({
       >
         <div className="h-auto md:h-1/3 w-full flex flex-col">
           <div className="flex justify-between py-4 px-4">
-            <h4 className="project-card-title text-md md:text-xl lg:text-2xl font-bold font-ibm">
+            <h4 className="project-card-title text-md md:text-xl lg:text-2xl font-bold font-imb">
               {project.title}
             </h4>
             <button
@@ -78,7 +78,7 @@ export default function ProjectOverlay({
           />
         </div>
         <div className="project-card-description flex flex-col gap-4 w-full h-auto md:h-1/3">
-          <p className="whitespace-pre-line font-ibm text-xs lg:text-md xl:text-xl">
+          <p className="whitespace-pre-line text-xs lg:text-md xl:text-xl">
             {project?.description}
           </p>
         </div>
