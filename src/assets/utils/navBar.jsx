@@ -65,7 +65,7 @@ export default function NavBar() {
           >
             <a
               href={`#${id}`}
-              className="navbar-link relative text-sm md:text-lg lg:text-2xl bg-transparent flex items-center justify-center h-auto w-full font-imb"
+              className="navbar-link relative text-sm md:text-lg lg:text-2xl bg-transparent flex items-center justify-center h-auto w-full font-ibm"
               style={{
                 color: isDark ? "#7b5ea7" : "#3d3d3d",
                 transition: "color 0.4s ease",

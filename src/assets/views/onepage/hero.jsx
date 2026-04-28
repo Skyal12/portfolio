@@ -48,7 +48,7 @@ export default function Hero() {
       >
         {/* TEXTE */}
         <h3
-          className="hidden lg:block col-span-0 lg:col-span-2 text-xl font-imb w-full text-left font-syne"
+          className="hidden lg:block lg:col-span-2 text-xl font-ibm w-full text-left font-syne"
           style={{
             color: isDark ? "#F0F0F0" : "#3d3d3d",
             transition: "color 0.4s ease",
@@ -64,14 +64,14 @@ export default function Hero() {
       {/* CONTENU HERO */}
       <div className="grid grid-cols-1 lg:grid-cols-5 h-auto mt-16 mx-12 lg:mx-12 lg:mb-52 w-full">
         <div className="lg:col-start-1 lg:col-span-1 flex flex-col gap-4">
-          <ul className="flex flex-col list-none text-sm lg:text-md font-imb text-tertiary gap-1">
+          <ul className="flex flex-col list-none text-sm lg:text-md font-ibm text-tertiary gap-1">
             <li>{t("hero.work")}</li>
             <li>{t("hero.disponible")}</li>
             <li>{t("hero.where")}</li>
           </ul>
           <a
             href="#contact"
-            className="link underline font-imb font-medium text-xl"
+            className="link underline font-ibm font-medium text-xl"
             style={{ width: "fit-content" }}
           >
             <div className="uppercase">{t("hero.contact")} </div>
@@ -92,7 +92,7 @@ export default function Hero() {
 
       {/* SCROLL */}
       <div className="animate-bounce grid place-items-center pb-12 pt-12 opacity-70">
-        <img src={chevron} className="size-8 rotate-90" />
+        <img src={chevron} alt="Descender" className="size-8 rotate-90" />
       </div>
       <div data-section="hero" className="h-4" data-theme="light"></div>
     </section>

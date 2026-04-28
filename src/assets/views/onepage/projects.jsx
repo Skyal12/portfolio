@@ -9,13 +9,11 @@ export default function Projects({
   projects,
 }) {
   const [active, setActive] = useState(true);
-  const projectList = projects;
   const [index, setIndex] = useState(0);
 
   const { t } = useLanguage();
 
   const VISIBLE = 3;
-  const DRAG_BUFFER = 50;
 
   const SPRING_OPTIONS = {
     type: "spring",
@@ -26,7 +24,7 @@ export default function Projects({
 
   const goNext = (e) => {
     e.stopPropagation();
-    if (index < projectList.length - VISIBLE) {
+    if (index < projects.length - VISIBLE) {
       setIndex((prev) => prev + 1);
     }
   };
@@ -49,10 +47,6 @@ export default function Projects({
     toggleAccordion();
   };
 
-  const handleCloseOverlay = () => {
-    setActiveProject(null);
-  };
-
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
@@ -64,14 +58,14 @@ export default function Projects({
   useEffect(() => {
     const handleOutsideClick = (e) => {
       if (e.target.classList.contains("overlay")) {
-        handleCloseOverlay();
+        setActiveProject(null);
       }
     };
     document.addEventListener("click", handleOutsideClick);
     return () => {
       document.removeEventListener("click", handleOutsideClick);
     };
-  });
+  }, [setActiveProject]);
 
   useEffect(() => {
     if (activeProject) {
@@ -90,14 +84,14 @@ export default function Projects({
       className="h-auto md:h-[270vh] lg:h-[280vh] flex flex-col bg-primary relative "
       data-theme="light"
     >
-      <div className="projects-text w-full px-4 md:px-20 py-12 flex flex-col md:flex-row items-start md:justify-between px-12 py-6 mb-20">
-        <div className="block md:hidden projects-title  flex w-full h-auto flex-col gap-4 jusify-end items-end md:text-right ">
-          <h3 className="text-3xl font-imb text-secondary mb-12">
+      <div className="projects-text w-full px-4 md:px-20 py-6 flex flex-col md:flex-row items-start md:justify-between mb-20">
+        <div className="block md:hidden projects-title  flex w-full h-auto flex-col gap-4 justify-end items-end md:text-right ">
+          <h3 className="text-3xl font-ibm text-secondary mb-12">
             {t("projects.title1")}
           </h3>
         </div>
         <div className="projects-description md:full md:w-2/3 lg:w-1/4 h-auto md:h-[125vh] flex flex-col gap-6 md:gap-12 justify-end">
-          <p className="font-imb text-tertiary mb-2 flex flex-col gap-6">
+          <p className="font-ibm text-tertiary mb-2 flex flex-col gap-6">
             <span className="font-syne lg:w-[200%] text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold text-tertiary mb-4">
               {t("projects.approach")}
             </span>
@@ -123,7 +117,7 @@ export default function Projects({
           <button className="text-right md:text-left lg:text-right">
             <a
               href="#contact"
-              className="link underline font-imb font-medium text-md md:text-lg xl:text-xl"
+              className="link underline font-ibm font-medium text-md md:text-lg xl:text-xl"
               style={{ width: "fit-content" }}
             >
               <div className="uppercase">{t("projects.contact")}</div>
@@ -131,8 +125,8 @@ export default function Projects({
             </a>
           </button>
         </div>
-        <div className="hidden md:block projects-title sticky top-40 flex w-full h-[40vh] flex-col gap-4 jusify-end items-end md:text-right ">
-          <h3 className="text-3xl lg:text-4xl xl:text-5xl font-imb text-secondary mb-12">
+        <div className="hidden md:block projects-title sticky top-40 flex w-full h-[40vh] flex-col gap-4 justify-end items-end md:text-right ">
+          <h3 className="text-3xl lg:text-4xl xl:text-5xl font-ibm text-secondary mb-12">
             {t("projects.title1")}
           </h3>
         </div>
@@ -152,19 +146,19 @@ export default function Projects({
 
         <div className="project-accordion">
           {/* title global */}
-          <div className="project-accordion-title grid grid grid-cols-4 md:grid-cols-5 lg:grid-cols-5 gap-6 mb-6">
+          <div className="project-accordion-title grid grid-cols-4 md:grid-cols-5 lg:grid-cols-5 gap-6 mb-6">
             <div className="item-title col-start-1">
-              <h4 className="font-imb text-sm md:text-md lg:text-lg xl:text-xl">
+              <h4 className="font-ibm text-sm md:text-md lg:text-lg xl:text-xl">
                 {t("projects.flow")}
               </h4>
             </div>
             <div className="item-title col-start-2">
-              <h4 className="font-imb text-sm md:text-md lg:text-lg xl:text-xl">
+              <h4 className="font-ibm text-sm md:text-md lg:text-lg xl:text-xl">
                 {t("projects.date")}
               </h4>
             </div>
             <div className="item-title col-start-4">
-              <h4 className="font-imb text-sm md:text-md lg:text-lg xl:text-xl">
+              <h4 className="font-ibm text-sm md:text-md lg:text-lg xl:text-xl">
                 {t("projects.title2")}
               </h4>
             </div>
@@ -178,18 +172,18 @@ export default function Projects({
               data-cursor-hover
             >
               <div className="item-title col-start-1">
-                <h4 className="font-imb text-[10px] md:text-sm lg:text-md xl:text-lg">
+                <h4 className="font-ibm text-[10px] md:text-sm lg:text-md xl:text-lg">
                   {t("projects.flow1")}
                 </h4>
               </div>
               <div className="item-title col-start-2 col-span-2">
-                <h4 className="font-imb text-[10px] md:text-sm lg:text-md xl:text-lg">
+                <h4 className="font-ibm text-[10px] md:text-sm lg:text-md xl:text-lg">
                   {t("projects.Date1")}
                 </h4>
               </div>
               <div className="item-title col-start-4">
-                <h4 className="font-imb text-[10px] md:text-sm lg:text-md xl:text-lg">
-                  [ {projectList.length} ]
+                <h4 className="font-ibm text-[10px] md:text-sm lg:text-md xl:text-lg">
+                  [ {projects.length} ]
                 </h4>
               </div>
               <button
@@ -219,7 +213,7 @@ export default function Projects({
                   transition={SPRING_OPTIONS}
                   className={`project-carrousel flex flex-col md:flex-row w-full`}
                 >
-                  {projectList.map((project, idx) => (
+                  {projects.map((project, idx) => (
                     <motion.div
                       key={project.id}
                       className="w-full md:w-1/3 shrink-0"
@@ -292,7 +286,7 @@ export default function Projects({
             </div>
             <hr />
           </div>
-          <div className="projet-contact grid grid-cols-2 xl:grid-cols-5 justify-end mt-4 mb-2">
+          <div className="project-contact grid grid-cols-2 xl:grid-cols-5 justify-end mt-4 mb-2">
             <a
               href="#contact"
               className="col-start-1 col-span-2 md:col-start-2 xl:col-start-5 link underline font-ibm font-medium text-xs md:text-md lg:text-xl text-right"

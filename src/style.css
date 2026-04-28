@@ -22,7 +22,7 @@ body {
 /* theme */
 @theme {
   --font-syne: "Syne", sans-serif;
-  --font-imb: "IBM Plex Mono", monospace;
+  --font-ibm: "IBM Plex Mono", monospace;
   --font-inter: "Inter", sans-serif;
 
   --color-primary: #f6f6f6;

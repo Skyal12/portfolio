@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="footer-info flex flex-col lg:flex-row gap-12">
         {/* Contact */}
         <div className="flex flex-col w-full xl:w-1/3">
-          <h3 className="text-xl font-imb text-white mb-6">
+          <h3 className="text-xl font-ibm text-white mb-6">
             {t("footer.contact")}
           </h3>
           <div className="flex flex-col gap-2">
@@ -30,7 +30,7 @@ export default function Footer() {
         </div>
         {/* navigation */}
         <div className="flex flex-col w-full xl:w-1/3">
-          <h3 className="text-xl font-imb text-white mb-6">
+          <h3 className="text-xl font-ibm text-white mb-6">
             {t("footer.nav")}
           </h3>
           <div className="flex flex-col gap-2">
@@ -70,7 +70,7 @@ export default function Footer() {
         </div>
         {/* note */}
         <div className="flex flex-col w-full xl:w-1/3">
-          <h3 className="text-xl font-imb text-white mb-6">
+          <h3 className="text-xl font-ibm text-white mb-6">
             {t("footer.note")}
           </h3>
           <p className="font-syne text-sm md:text-lg lg:text-xl text-primary">
@@ -85,7 +85,7 @@ export default function Footer() {
         >
           Salmon Alexis
         </a>
-        <p className="font-imb text-sm text-primary">&copy; 2026</p>
+        <p className="font-ibm text-sm text-primary">&copy; 2026</p>
       </div>
     </footer>
   );

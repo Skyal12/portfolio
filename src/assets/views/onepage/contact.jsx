@@ -15,12 +15,12 @@ export default function Contact() {
       <div className="flex flex-col lg:flex-row items-start justify-between h-1/2 px-12 py-6 gap-12 xl:gap-0">
         {/* Contact */}
         <div className="contact-info flex flex-col h-auto relative top-1/5 w-full lg:w-2/3 xl:w-2/3">
-          <h3 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-imb text-secondary mb-12">
+          <h3 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-ibm text-secondary mb-12">
             {t("contact.title")}
           </h3>
           <div className="flex flex-col xl:flex-row gap-12">
             <div className="flex flex-col gap-4">
-              <p className="text-md md:text-lg lg:text-xl xl:text-2xl font-imb text-tertiary mb-2">
+              <p className="text-md md:text-lg lg:text-xl xl:text-2xl font-ibm text-tertiary mb-2">
                 {t("contact.email")}
               </p>
               <a
@@ -32,7 +32,7 @@ export default function Contact() {
               </a>
             </div>
             <div className="flex flex-col gap-4">
-              <p className="text-md md:text-lg lg:text-xl xl:text-2xl font-imb text-tertiary mb-2">
+              <p className="text-md md:text-lg lg:text-xl xl:text-2xl font-ibm text-tertiary mb-2">
                 {t("contact.phone")}
               </p>
               <a
@@ -48,7 +48,7 @@ export default function Contact() {
 
         {/* Social */}
         <div className="social-info flex flex-col h-auto xl:items-center relative top-0 xl:top-4/5 lg:w-1/3 xl:w-1/5">
-          <h3 className="text-3xl lg:text-4xl xl:text-5xl font-imb text-secondary text-left xl:text-center mb-12">
+          <h3 className="text-3xl lg:text-4xl xl:text-5xl font-ibm text-secondary text-left xl:text-center mb-12">
             {t("contact.social")}
           </h3>
           <div className="flex flex-row gap-6 justify-center">
