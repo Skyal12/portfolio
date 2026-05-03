@@ -8,7 +8,7 @@ import chevron from "../../img/chevron.png";
 export default function Hero() {
   const { t } = useLanguage();
   const { scrollY } = useScroll();
-  const navTop = useTransform(scrollY, [0, 300], ["35%", "3%"]);
+  const navTop = useTransform(scrollY, [0, 300], ["30%", "3%"]);
   const navPosition = useTransform(scrollY, [299, 300], ["absolute", "fixed"]);
 
   const [isDark, setIsDark] = useState(true);
@@ -62,7 +62,7 @@ export default function Hero() {
       </motion.div>
 
       {/* CONTENU HERO */}
-      <div className="grid grid-cols-1 lg:grid-cols-5 h-auto mt-16 mx-12 lg:mx-12 lg:mb-52 w-full">
+      <div className="grid grid-cols-1 lg:grid-cols-5 h-auto mt-16 px-12 lg:px-12 lg:mb-52 w-full">
         <div className="lg:col-start-1 lg:col-span-1 flex flex-col gap-4">
           <ul className="flex flex-col list-none text-sm lg:text-md font-ibm text-tertiary gap-1">
             <li>{t("hero.work")}</li>
