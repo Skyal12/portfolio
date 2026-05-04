@@ -36,7 +36,7 @@ export default function Hero() {
       id="hero"
       data-theme="light"
       data-section="hero"
-      className="h-screen w-screen relative overflow-hidden"
+      className="h-screen w-full relative overflow-hidden"
     >
       {/* NAVBAR animée */}
       <motion.div
