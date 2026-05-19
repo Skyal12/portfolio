@@ -89,7 +89,7 @@ export default function Stack() {
           </div>
         </div>
         <div className="stack-bottom h-full w-full">
-          <div className="stack-separator text-xs md:text-md lg:text-lg sticky my-auto grid md:grid-cols-6 xl:grid-cols-5 gap-6 mb-0 md:mb-12 lg:mb-0 xl:mb-12">
+          <div className="stack-separator text-xs md:text-md lg:text-lg sticky my-auto grid grid-cols-3 md:grid-cols-6 xl:grid-cols-5 gap-6 mb-0 md:mb-12 lg:mb-0 xl:mb-12">
             <div className="flex flex-col col-span-2 xl:col-span-1">
               <h4 className=" text-primary font-syne">{t("about.vision")}</h4>
               <p className=" pl-2 md:pl-4 lg:pl-6 font-syne text-secondary">
