@@ -61,7 +61,7 @@ export default function Stack() {
       id="stack"
     >
       <div className="stack sticky top-0 h-screen grid grid-rows-2 isolate overflow-hidden">
-        <div className="stack-top h-full w-full sticky top-1/8 pl-0 lg:pl-20 z-10 mb-8">
+        <div className="stack-top h-full w-full sticky top-1/8 pl-0 lg:pl-20 z-10 mb-8 gap-4 flex flex-col">
           <div className="flex flex-col">
             <h3 className=" text-6xl md:text-7xl lg:text-8xl xl:text-9xl text-primary font-syne">
               {t("about.skills")}
@@ -70,39 +70,35 @@ export default function Stack() {
               {t("about.skillsText")}
             </p>
           </div>
-          <div className="stack-separator grid grid-cols-3 md:grid-cols-5 gap-6">
+          <div className="stack-separator text-xs md:text-md lg:text-lg grid grid-cols-3 md:grid-cols-5 gap-6">
             <h4 className="hidden md:block col-start-2 md:col-start-3 col-span-1 text-lg mb-8 text-primary text-end lg:text-end relative top-16 md:top-0 font-syne">
               {t("about.stack")}
             </h4>
             <div className="flex flex-col col-span-2 lg:col-span-1 col-start-2 md:col-start-4">
-              <h4 className="text-md lg:text-lg text-primary font-syne">
-                {t("about.tools")}
-              </h4>
-              <p className="text-md lg:text-lg pl-2 md:pl-4 lg:pl-6 font-syne text-secondary">
+              <h4 className="text-primary font-syne">{t("about.tools")}</h4>
+              <p className=" pl-2 md:pl-4 lg:pl-6 font-syne text-secondary">
                 {t("about.toolsText")}
               </p>
-              <p className="text-md lg:text-lg pl-2 md:pl-4 lg:pl-6 font-syne text-primary">
+              <p className="pl-2 md:pl-4 lg:pl-6 font-syne text-primary">
                 {t("about.toolsText2")}
               </p>
-              <p className=" text-md lg:text-lg pl-2 md:pl-4 lg:pl-6 font-syne text-secondary">
+              <p className="pl-2 md:pl-4 lg:pl-6 font-syne text-secondary">
                 {t("about.toolsText3")}
               </p>
             </div>
           </div>
         </div>
         <div className="stack-bottom h-full w-full">
-          <div className="stack-separator sticky my-auto grid md:grid-cols-6 xl:grid-cols-5 gap-6 mb-0 md:mb-12 lg:mb-0 xl:mb-12">
+          <div className="stack-separator text-xs md:text-md lg:text-lg sticky my-auto grid md:grid-cols-6 xl:grid-cols-5 gap-6 mb-0 md:mb-12 lg:mb-0 xl:mb-12">
             <div className="flex flex-col col-span-2 xl:col-span-1">
-              <h4 className="text-md lg:text-lg text-primary font-syne">
-                {t("about.vision")}
-              </h4>
-              <p className="text-md lg:text-lg pl-2 md:pl-4 lg:pl-6 font-syne text-secondary">
+              <h4 className=" text-primary font-syne">{t("about.vision")}</h4>
+              <p className=" pl-2 md:pl-4 lg:pl-6 font-syne text-secondary">
                 {t("about.visionText1")}
               </p>
-              <p className="text-md lg:text-lg pl-2 md:pl-4 lg:pl-6 font-syne text-secondary">
+              <p className=" pl-2 md:pl-4 lg:pl-6 font-syne text-secondary">
                 {t("about.visionText2")}
               </p>
-              <p className="text-md lg:text-lg text-primary pl-2 md:pl-4 lg:pl-6 font-syne">
+              <p className=" text-primary pl-2 md:pl-4 lg:pl-6 font-syne">
                 {t("about.visionText3")}
               </p>
             </div>

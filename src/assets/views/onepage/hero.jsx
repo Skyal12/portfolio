@@ -40,7 +40,7 @@ export default function Hero() {
     >
       {/* NAVBAR animée */}
       <motion.div
-        className="absolute grid grid-cols-5 xl:grid-cols-6 w-full h-auto px-4 lg:px-12 z-50"
+        className="absolute grid grid-cols-5 xl:grid-cols-6 w-full h-auto px-4 lg:px-12 py-12 md:py-0 z-50"
         style={{
           top: navTop,
           position: navPosition,
